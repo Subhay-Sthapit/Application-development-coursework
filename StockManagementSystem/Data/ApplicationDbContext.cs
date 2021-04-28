@@ -14,5 +14,9 @@ namespace StockManagementSystem.Data
         {
         }
         public DbSet<StockManagementSystem.Models.Category> Category { get; set; }
+        public DbSet<StockManagementSystem.Models.Product> Product { get; set; }
+        public DbSet<StockManagementSystem.Models.ProductStock> ProductStock { get; set; }
+
+
     }
 }

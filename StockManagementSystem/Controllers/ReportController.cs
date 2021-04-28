@@ -29,7 +29,7 @@ namespace StockManagementSystem.Controllers
             using (var command = _context.Database.GetDbConnection().CreateCommand())
             {
 
-                command.CommandText = "SELECT p.Id as ProductId,Name as ProductName,ps.Quantity from Product p inner join ProductStock ps on p.Id=ps.ProductId";
+                command.CommandText = "SELECT p.Id as ProductId,ProductName as ProductName,ps.Quantity from Product p inner join ProductStock ps on p.Id=ps.ProductId";
                 _context.Database.OpenConnection();
                 using (var result = command.ExecuteReader())
                 {
