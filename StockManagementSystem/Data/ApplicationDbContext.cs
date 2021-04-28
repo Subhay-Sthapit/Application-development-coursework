@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using StockManagementSystem.Models;
 
 namespace StockManagementSystem.Data
 {
@@ -12,5 +13,6 @@ namespace StockManagementSystem.Data
             : base(options)
         {
         }
+        public DbSet<StockManagementSystem.Models.Category> Category { get; set; }
     }
 }
