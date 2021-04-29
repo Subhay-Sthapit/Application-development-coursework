@@ -38,9 +38,9 @@ namespace StockManagementSystem.Controllers
                     while (result.Read())
                     {
                         data = new ProductStockViewModel();
-                        data.ProductId = int.Parse(result.GetString(0));
+                        data.ProductId = result.GetInt32(0);
                         data.ProductName = result.GetString(1);
-                        data.Quantity = int.Parse(result.GetString(2));
+                        data.Quantity = result.GetInt32(2);
                         lstData.Add(data);
                     }
                 }
