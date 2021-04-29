@@ -14,5 +14,6 @@ namespace StockManagementSystem.Models
         public string Name { get; set; }
 
         // kik
+        // kikkik
     }
 }
